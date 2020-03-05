@@ -1,18 +1,18 @@
-open Http;;
-open Http2;;
+open Http2en;;
+open Http2de;;
 open Int64Word;;
 
 
 let ()=
   print_endline "start";
   
-  let setting_frame:Http.hTTP_Frame ={length=0x000000;
+  let setting_frame:Http2en.hTTP_Frame ={length=0x000000;
              type0=0x04;
              flags=0x00;
              r=0x00;
              stream_Identifier=0x000000;
              payload=[]} in
-  let header_frame:Http.hTTP_Frame={length=0x00000b;
+  let header_frame:Http2en.hTTP_Frame={length=0x00000b;
                     type0=0x01;
                     flags=0x05;
                     r=0x00;
