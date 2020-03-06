@@ -1,3 +1,8 @@
+(*
+Copyright (c) 2014, Massachusetts Institute of Technology
+Copyright (C) 2018 Pieter Goetschalckx
+*)
+
 open Http2en;;
 open Http2de;;
 open Int64Word;;
